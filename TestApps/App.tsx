@@ -6,8 +6,8 @@
 
 import React from 'react';
 import {SafeAreaView, ScrollView, View, Text, StyleSheet} from 'react-native';
-import app from './app';
-
+import app from './app.json';
+import ItemList from './src/template/itemList';
 function App(): JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
@@ -15,9 +15,8 @@ function App(): JSX.Element {
         <View style={styles.titleBox}>
           <Text style={styles.titleTxt}>{app.name}</Text>
         </View>
-        <View style={styles.category}>
-          <Text style={styles.btnTxt}>button</Text>
-        </View>
+
+        <ItemList />
       </ScrollView>
     </SafeAreaView>
   );

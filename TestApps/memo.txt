@@ -1,0 +1,26 @@
+コマンド
+{
+    npm run android
+}
+{
+  "compilerOptions": {
+    "target": "esnext", // React NativeはモダンなJavaScriptエンジンを使用
+    "module": "esnext", // モダンなモジュールシステムを利用
+    "jsx": "react",     // React JSX構文をサポート
+    "outDir": "./dist", // 出力ディレクトリは必要に応じて設定
+    "strict": true,     // 厳格な型チェックを有効に
+    "noImplicitAny": true, // 任意の型の暗黙的な使用を許可しない
+    "esModuleInterop": true, // ESモジュールとの相互運用性を有効に
+    "skipLibCheck": true, // 大規模なプロジェクトではビルド時間を短縮
+    "allowSyntheticDefaultImports": true, // デフォルトインポートを許可
+    "noEmit": true, // コンパイル時にファイルを出力しない（React Nativeでは通常不要）
+    "isolatedModules": true // 各ファイルを個別のモジュールとして扱う（高速化に役立つ）
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules", 
+    "**/*.spec.ts"
+  ]
+}
