@@ -1,21 +1,39 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import itemList from '../../json/Item.json';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from '../types/RootStackParamList';
 
 export default function ItemList(): JSX.Element {
-  return (
-    <View style={styles.category}>
-      <Text style={styles.btnTxt}>button</Text>
-    </View>
-  );
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+  const items = itemList.map(item => {
+    return (
+      <TouchableOpacity
+        key={item.name}
+        style={styles.touchableOpacity}
+        onPress={() => {
+          navigation.push(item.root as keyof RootStackParamList);
+        }}>
+        <View style={styles.category}>
+          <Text style={styles.btnTxt}>{item.name}</Text>
+        </View>
+      </TouchableOpacity>
+    );
+  });
+  return <>{items}</>;
 }
 
 const styles = StyleSheet.create({
+  touchableOpacity: {
+    marginVertical: 10,
+  },
   category: {
-    backgroundColor: 'aqua',
+    backgroundColor: 'black',
     borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingVertical: 20,
   },
   btnTxt: {
     fontSize: 30,

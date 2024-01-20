@@ -1,6 +1,13 @@
 コマンド
 {
     npm run android
+    npm install @react-navigation/native
+    npx pod-install ios
+    npm install react-native-screens react-native-safe-area-context
+    import { NavigationContainer } from '@react-navigation/native';
+    npm install @react-navigation/native-stack
+    import { createNativeStackNavigator } from '@react-navigation/native-stack';
+    npm install react-native-gesture-handler
 }
 {
   "compilerOptions": {
