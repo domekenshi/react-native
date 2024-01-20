@@ -1,14 +1,26 @@
 [
   {
-    "name": "項目１",
+    "name": "項目1",
     "root": "Detail"
   },
   {
-    "name": "項目２",
+    "name": "項目2",
     "root": "Detail"
   },
   {
-    "name": "項目３",
+    "name": "項目3",
+    "root": "Detail"
+  },
+  {
+    "name": "項目4",
+    "root": "Detail"
+  },
+  {
+    "name": "項目5",
+    "root": "Detail"
+  },
+  {
+    "name": "項目6",
     "root": "Detail"
   }
 ]

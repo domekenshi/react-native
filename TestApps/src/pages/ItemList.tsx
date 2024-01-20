@@ -15,7 +15,7 @@ export default function ItemList(): JSX.Element {
         onPress={() => {
           navigation.push(item.root as keyof RootStackParamList);
         }}>
-        <View style={styles.category}>
+        <View style={styles.btnBox}>
           <Text style={styles.btnTxt}>{item.name}</Text>
         </View>
       </TouchableOpacity>
@@ -28,12 +28,13 @@ const styles = StyleSheet.create({
   touchableOpacity: {
     marginVertical: 10,
   },
-  category: {
+  btnBox: {
     backgroundColor: 'black',
     borderRadius: 10,
     borderWidth: 1,
     paddingHorizontal: 20,
     paddingVertical: 20,
+    marginHorizontal: 20,
   },
   btnTxt: {
     fontSize: 30,

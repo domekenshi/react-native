@@ -7,9 +7,9 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from './src/template/HomeScreen';
-import Detail from './src/pages/detail';
 import {RootStackParamList} from './src/types/RootStackParamList';
+import HomeScreen from './src/pages/HomeScreen';
+import Detail from './src/pages/detail';
 
 const Stack = createStackNavigator<RootStackParamList>();
 function App() {
