@@ -1,15 +1,15 @@
 [
   {
-    "name": "項目1",
+    "name": "Todoリスト",
+    "root": "Todo"
+  },
+  {
+    "name": "Detail",
     "root": "Detail"
   },
   {
-    "name": "項目2",
-    "root": "Detail"
-  },
-  {
-    "name": "項目3",
-    "root": "Detail"
+    "name": "Animation",
+    "root": "Animation"
   },
   {
     "name": "項目4",
