@@ -13,7 +13,9 @@ export default function ItemList(): JSX.Element {
         key={item.name}
         style={styles.touchableOpacity}
         onPress={() => {
-          navigation.push(item.root as keyof RootStackParamList);
+          navigation.push(item.root as keyof RootStackParamList, {
+            subItem: item.subItem.length > 0 ? item.subItem : null,
+          });
         }}>
         <View style={styles.btnBox}>
           <Text style={styles.btnTxt}>{item.name}</Text>

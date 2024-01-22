@@ -1,26 +1,41 @@
 [
   {
     "name": "Todoリスト",
-    "root": "Todo"
+    "root": "Todo",
+    "subItem": []
   },
   {
     "name": "Detail",
-    "root": "Detail"
+    "root": "Detail",
+    "subItem": []
   },
   {
     "name": "Animation",
-    "root": "Animation"
+    "root": "Animation",
+    "subItem": [
+      {
+        "name": "sub1",
+        "root": "sub1"
+      },
+      {
+        "name": "sub2",
+        "root": "sub2"
+      }
+    ]
   },
   {
     "name": "項目4",
-    "root": "Detail"
+    "root": "Detail",
+    "subItem": []
   },
   {
     "name": "項目5",
-    "root": "Detail"
+    "root": "Detail",
+    "subItem": []
   },
   {
     "name": "項目6",
-    "root": "Detail"
+    "root": "Detail",
+    "subItem": []
   }
 ]

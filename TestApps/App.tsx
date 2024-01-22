@@ -10,7 +10,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {RootStackParamList} from './src/types/RootStackParamList';
 import HomeScreen from './src/pages/HomeScreen';
 import Todo from './src/pages/Todo';
-import Animation from './src/pages/Animation';
+import Animation from './src/pages/Animations/Animation';
 
 import Detail from './src/pages/detail';
 
@@ -23,6 +23,7 @@ function App() {
         <Stack.Screen name="Todo" component={Todo} />
         <Stack.Screen name="Detail" component={Detail} />
         <Stack.Screen name="Animation" component={Animation} />
+        <Stack.Screen name="Scaling" component={Animation} />
       </Stack.Navigator>
     </NavigationContainer>
   );

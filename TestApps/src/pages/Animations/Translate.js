@@ -6,7 +6,7 @@ import Animated, {
   useAnimatedStyle,
 } from 'react-native-reanimated';
 
-export default function Animation() {
+export default function Translate() {
   //   const width = useSharedValue(100);
   const translateX = useSharedValue(0);
   //   const expandPress = () => {
