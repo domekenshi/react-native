@@ -1,3 +1,6 @@
+/**
+ * ルートの引数と型を定義
+ */
 import {SubItemType} from '../types/types';
 
 export type RootStackParamList = {

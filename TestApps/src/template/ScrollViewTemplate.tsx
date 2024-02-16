@@ -1,3 +1,6 @@
+/**
+ * スクロールビューの大枠
+ */
 import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 
